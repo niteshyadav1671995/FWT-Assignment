@@ -19,6 +19,14 @@ public class Screen {
 		return name;
 	}
 
+	public Movie getMovie() {
+		return movie;
+	}
+
+	public void setMovie(Movie movie) {
+		this.movie = movie;
+	}
+
 	@Override
 	public String toString() {
 		return "Screen [id=" + id + ", name=" + name + "]";

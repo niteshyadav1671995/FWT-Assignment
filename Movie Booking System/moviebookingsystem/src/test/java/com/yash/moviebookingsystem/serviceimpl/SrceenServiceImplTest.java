@@ -44,9 +44,9 @@ public class SrceenServiceImplTest {
 
 	@Test(expected = ValueAlreadyAvailableException.class)
 	public void addScreen_GivenScreenNameIsCorrect_ThrowValueAlreadyAvailableException() {
-		Screen screen = new Screen(101, "Screen 1");
-		when(screenDAO.add(any(Screen.class))).thenThrow(ValueAlreadyAvailableException.class);
-		screenService.addScreen(screen);
+		List<Screen> screenList = Arrays.asList(new Screen(101, "screen 2"));
+		when(screenDAO.getScreens()).thenReturn(screenList);
+		screenService.addScreen(new Screen(101, "screen 2"));
 	}
 
 	@Test(expected = SizeExceedsException.class)
@@ -57,5 +57,4 @@ public class SrceenServiceImplTest {
 		when((screenDAO.getScreens())).thenReturn(screenList);
 		screenService.addScreen(fourthScreen);
 	}
-
 }

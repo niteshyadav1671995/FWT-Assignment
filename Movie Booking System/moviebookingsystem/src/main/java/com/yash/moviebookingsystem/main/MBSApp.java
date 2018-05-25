@@ -5,7 +5,7 @@ import com.yash.moviebookingsystem.util.MovieBookingSystem;
 public class MBSApp {
 
 	public static void main(String[] args) {
-		MovieBookingSystem mbs=new MovieBookingSystem();
+		MovieBookingSystem mbs = new MovieBookingSystem();
 		mbs.startMbsApp();
 	}
 

@@ -15,6 +15,10 @@ public class Movie {
 		this.actors = actors;
 	}
 
+	public Movie() {
+		// TODO Auto-generated constructor stub
+	}
+
 	public String getTitle() {
 		return title;
 	}
