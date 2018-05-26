@@ -17,7 +17,7 @@ import com.yash.moviebookingsystem.exception.ValueAlreadyAvailableException;
 import com.yash.moviebookingsystem.model.Screen;
 import com.yash.moviebookingsystem.service.ScreenService;
 
-public class SrceenServiceImplTest {
+public class ScreenServiceImplTest {
 
 	private ScreenDAO screenDAO = mock(ScreenDAO.class);
 	private ScreenService screenService = new ScreenServiceImpl(screenDAO);

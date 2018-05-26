@@ -68,4 +68,14 @@ public class JSONUtil {
 		return true;
 	}
 
+	public Screen getScreenObject(String screenName) {
+		screenList = readListOfScreen();
+		Screen requiredScreen = null;
+		for (Screen screen : screenList) {
+			if (screen.getName().equalsIgnoreCase(screenName)) {
+				requiredScreen = screen;
+			}
+		}
+		return requiredScreen;
+	}
 }
