@@ -1,5 +1,6 @@
 package com.yash.moviebookingsystem.serviceimpl;
 
+import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 import static org.mockito.Matchers.anyString;
 import static org.mockito.Mockito.mock;
@@ -30,6 +31,22 @@ public class ShowServiceImplTest {
 		when(showDAO.getScreen(anyString())).thenReturn(screen);
 		boolean isAvailable = showService.checkScreenAvailable(screenName);
 		assertTrue(isAvailable);
+	}
+
+	@Test
+	public void addShows_ScreenNameGiven_ShouldReturnTrueIfShowsAdded() {
+		String screenName = "screen 1";
+		when(showDAO.addShows(anyString())).thenReturn(true);
+		boolean isShowsAdded = showService.addShows(screenName);
+		assertTrue(isShowsAdded);
+	}
+
+	@Test
+	public void addShows_ScreenNameGiven_ShouldReturnFalseIfShowsNotAdded() {
+		String screenName = "screen 1";
+		when(showDAO.addShows(anyString())).thenReturn(false);
+		boolean isShowsAdded = showService.addShows(screenName);
+		assertFalse(isShowsAdded);
 	}
 
 }

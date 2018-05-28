@@ -55,5 +55,14 @@ public class ShowServiceImpl implements ShowService {
 		}
 		return isAvailable;
 	}
+	
+	public boolean addShows(String screenName) {
+		boolean isShowsAdded = false;
+		if(showDAO.addShows(screenName)) {
+			isShowsAdded=true;
+		}
+		return isShowsAdded;
+	}
+
 
 }
