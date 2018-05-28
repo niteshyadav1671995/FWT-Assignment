@@ -1,7 +1,6 @@
 package com.yash.moviebookingsystem.model;
 
 import java.sql.Time;
-import java.util.List;
 
 public class Show {
 	private int id;
@@ -28,6 +27,5 @@ public class Show {
 	public void setShowTime(Time showTime) {
 		this.showTime = showTime;
 	}
-
 
 }

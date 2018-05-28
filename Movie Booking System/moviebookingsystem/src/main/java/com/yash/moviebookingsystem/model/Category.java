@@ -7,14 +7,12 @@ public class Category {
 	private int id;
 	private int price;
 	private String categoryName;
-	private List<Row> rows;
 
-	public Category(int id, int price, String categoryName, List<Row> rows) {
+	public Category(int id, int price, String categoryName) {
 		super();
 		this.id = id;
 		this.price = price;
 		this.categoryName = categoryName;
-		this.rows = rows;
 	}
 
 	public int getId() {
@@ -41,18 +39,4 @@ public class Category {
 		this.categoryName = categoryName;
 	}
 
-	public List<Row> getRows() {
-		return rows;
-	}
-
-	public void setRows(List<Row> rows) {
-		this.rows = rows;
-	}
-
-	@Override
-	public String toString() {
-		return "Category [id=" + id + ", price=" + price + ", categoryName=" + categoryName + ", rows=" + rows + "]";
-	}
-
-	
 }

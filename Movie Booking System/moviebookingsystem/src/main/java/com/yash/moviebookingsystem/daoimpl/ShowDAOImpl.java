@@ -61,6 +61,8 @@ public class ShowDAOImpl implements ShowDAO {
 			listOFShows.add(new Show(id++, new Time(hour, 0, 0)));
 			hour += 4;
 			showEndTime.setHours(showStartTime.getHours() + movieDuration.getHours());
+			showEndTime.setMinutes(showStartTime.getMinutes()+movieDuration.getMinutes());
+			showEndTime.setSeconds(showStartTime.getSeconds()+movieDuration.getSeconds());
 			showStartTime.setHours(showStartTime.getHours() + 4);
 		}
 		List<Screen> listOfScreen = jsonUtil.readListOfScreen();

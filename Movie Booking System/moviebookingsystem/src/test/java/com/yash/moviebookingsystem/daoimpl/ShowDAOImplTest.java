@@ -1,7 +1,5 @@
 package com.yash.moviebookingsystem.daoimpl;
 
-import static org.junit.Assert.assertTrue;
-
 import org.junit.Before;
 import org.junit.Test;
 
@@ -33,12 +31,7 @@ public class ShowDAOImplTest {
 		showDAO.addShows(screenName);
 	}
 	
-	@Test
-	public void addShows_ScreenNameIsCorrect_ShouldReturnTrueIfShowAdded() {
-		String screenName="screen 1";
-		assertTrue(showDAO.addShows(screenName));
-	}
-	
+
 	@Test(expected=NullFieldException.class)
 	public void getScreen_ScreenNameNull_ThrowNullFieldException() {
 		String screenName=null;

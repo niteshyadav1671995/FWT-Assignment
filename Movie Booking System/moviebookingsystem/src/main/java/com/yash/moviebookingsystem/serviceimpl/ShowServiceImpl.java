@@ -37,6 +37,8 @@ public class ShowServiceImpl implements ShowService {
 		Time showEndTime = new Time(0, 0, 0);
 		for (int i = 0; i < 4; i++) {
 			showEndTime.setHours(showStartTime.getHours() + movieDuration.getHours());
+			showEndTime.setMinutes(showStartTime.getMinutes()+movieDuration.getMinutes());
+			showEndTime.setSeconds(showStartTime.getSeconds()+movieDuration.getSeconds());
 			System.out.println(showStartTime + " to " + showEndTime);
 			showStartTime.setHours(showStartTime.getHours() + 4);
 		}

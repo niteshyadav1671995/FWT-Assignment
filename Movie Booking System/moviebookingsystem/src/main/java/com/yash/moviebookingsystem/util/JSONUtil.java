@@ -14,12 +14,14 @@ import com.google.gson.reflect.TypeToken;
 import com.yash.moviebookingsystem.model.Screen;
 
 /**
- * This is the utility class which will provide the utility to read and write data 
- * from json. 
+ * This is the utility class which will provide the utility to read and write
+ * data from json.
+ * 
  * @author lenovo
  *
  */
 public class JSONUtil {
+
 	/**
 	 * This is the list of screens
 	 */
@@ -31,6 +33,7 @@ public class JSONUtil {
 
 	/**
 	 * This method will write the screen list to the json file.
+	 * 
 	 * @param screen
 	 * @return size of the screen's list
 	 */
@@ -50,7 +53,9 @@ public class JSONUtil {
 	}
 
 	/**
-	 * This method will read the data from json and store it into the screenlist object
+	 * This method will read the data from json and store it into the screenlist
+	 * object
+	 * 
 	 * @return list of screens
 	 */
 	public List<Screen> readListOfScreen() {
@@ -73,8 +78,10 @@ public class JSONUtil {
 	}
 
 	/**
-	 * This method will update the list of screen 
-	 * @param screenList - updated list of screen
+	 * This method will update the list of screen
+	 * 
+	 * @param screenList
+	 *            - updated list of screen
 	 * @return true/false as list updated
 	 */
 	public boolean updateListOfScreens(List<Screen> screenList) {
@@ -93,6 +100,7 @@ public class JSONUtil {
 
 	/**
 	 * This method will return the screen object by using the screen name.
+	 * 
 	 * @param screenName
 	 * @return
 	 */
