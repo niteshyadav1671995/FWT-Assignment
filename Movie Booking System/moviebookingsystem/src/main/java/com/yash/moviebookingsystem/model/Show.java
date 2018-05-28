@@ -6,12 +6,11 @@ import java.util.List;
 public class Show {
 	private int id;
 	private Time showTime;
-	private List<Category> category;
 
 	public Show(int id, Time showStartTime) {
 		this.showTime = showStartTime;
-		System.out.println(this.showTime+" "+showStartTime );
-		this.id=id;
+		System.out.println(this.showTime + " " + showStartTime);
+		this.id = id;
 	}
 
 	public int getId() {
@@ -30,17 +29,5 @@ public class Show {
 		this.showTime = showTime;
 	}
 
-	public List<Category> getCategory() {
-		return category;
-	}
-
-	public void setCategory(List<Category> category) {
-		this.category = category;
-	}
-
-	@Override
-	public String toString() {
-		return "Show [id=" + id + ", showTime=" + showTime + ", category=" + category + "]";
-	}
 
 }

@@ -44,7 +44,7 @@ public class MovieDAOImpl implements MovieDAO {
 		boolean isAvailable = false;
 		List<Screen> listOfScreen = jsonUtil.readListOfScreen();
 		for (Screen screenTest : listOfScreen) {
-			if (screenTest.getName().equalsIgnoreCase(screenName) && (screenTest.getMovie() != null)) {
+			if (screenTest.getName().equalsIgnoreCase(screenName) && (screenTest.getMovie() == null)) {
 				isAvailable = true;
 			}
 		}

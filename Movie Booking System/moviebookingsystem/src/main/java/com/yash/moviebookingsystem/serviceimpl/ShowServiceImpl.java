@@ -16,8 +16,6 @@ public class ShowServiceImpl implements ShowService {
 		this.showDAO = showDAO;
 	}
 
-
-
 	@Override
 	public int displayPossibleShows(String screenName) {
 		if (screenName == null) {
@@ -47,7 +45,6 @@ public class ShowServiceImpl implements ShowService {
 	@Override
 	public boolean checkScreenAvailable(String screenName) {
 		boolean isAvailable = false;
-		System.out.println(showDAO.getScreen(screenName));
 		Screen screen = showDAO.getScreen(screenName);
 
 		if (screen.getName().equalsIgnoreCase(screenName)) {

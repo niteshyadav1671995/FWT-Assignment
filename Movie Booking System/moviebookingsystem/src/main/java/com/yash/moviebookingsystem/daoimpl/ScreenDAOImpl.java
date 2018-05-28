@@ -10,10 +10,6 @@ public class ScreenDAOImpl implements ScreenDAO {
 
 	private JSONUtil jsonUtil;
 
-	public ScreenDAOImpl(JSONUtil jsonUtil) {
-		this.jsonUtil = jsonUtil;
-	}
-
 	public ScreenDAOImpl() {
 		jsonUtil=new JSONUtil();
 	}

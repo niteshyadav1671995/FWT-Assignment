@@ -12,13 +12,6 @@ public class MovieDAOImplTest {
 
 	private MovieDAO movieDAO = new MovieDAOImpl();
 
-	@Test
-	public void insert_GivenScreenNameAndMovieObject_ShouldReturnTrueIfAdded() {
-		String screenName = "Screen 1";
-		Movie movie = new Movie("Parmanu", "1:50:00", "abc", "John Abrahim");
-		assertTrue(movieDAO.insert(screenName, movie));
-	}
-
 	@Test(expected = ScreenNotAvailableException.class)
 	public void insert_GivenScreenNameNotAvailable_ThrowScreenNotAvailableException() {
 		String screenName = "Screen 4";

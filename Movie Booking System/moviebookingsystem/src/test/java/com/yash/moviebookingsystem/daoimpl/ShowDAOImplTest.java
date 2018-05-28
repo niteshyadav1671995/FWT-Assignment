@@ -4,18 +4,21 @@ import static org.junit.Assert.assertTrue;
 
 import org.junit.Before;
 import org.junit.Test;
+
 import com.yash.moviebookingsystem.dao.ShowDAO;
 import com.yash.moviebookingsystem.exception.EmptyFieldException;
 import com.yash.moviebookingsystem.exception.NullFieldException;
+import com.yash.moviebookingsystem.util.JSONUtil;
 
 public class ShowDAOImplTest {
 
-
 	private ShowDAO showDAO=null;
+	private JSONUtil jsonUtil=null;
 	
 	@Before()
 	public void setUp() {
-			showDAO=new ShowDAOImpl();
+			jsonUtil = new JSONUtil();
+			showDAO = new ShowDAOImpl(jsonUtil);
 	}
 	
 	@Test(expected=NullFieldException.class)

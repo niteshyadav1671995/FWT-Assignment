@@ -1,1 +1,1 @@
-[{"id":101,"name":"screen 1","movie":{"title":"Parmanu","production":"1:50:00","duration":"abc","actors":"John Abrahim"}}]
+[{"id":101,"name":"screen 1","movie":{"title":"adsf","production":"ads","duration":"2:0:0","actors":"asdfa"},"show":[{"id":100,"showTime":"09:00:00 AM"},{"id":101,"showTime":"01:00:00 PM"},{"id":102,"showTime":"05:00:00 PM"},{"id":103,"showTime":"09:00:00 PM"}]}]
