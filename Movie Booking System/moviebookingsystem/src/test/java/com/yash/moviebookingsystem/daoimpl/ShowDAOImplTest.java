@@ -1,15 +1,12 @@
 package com.yash.moviebookingsystem.daoimpl;
 
-import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
 import org.junit.Before;
 import org.junit.Test;
-
 import com.yash.moviebookingsystem.dao.ShowDAO;
 import com.yash.moviebookingsystem.exception.EmptyFieldException;
 import com.yash.moviebookingsystem.exception.NullFieldException;
-import com.yash.moviebookingsystem.model.Screen;
 
 public class ShowDAOImplTest {
 

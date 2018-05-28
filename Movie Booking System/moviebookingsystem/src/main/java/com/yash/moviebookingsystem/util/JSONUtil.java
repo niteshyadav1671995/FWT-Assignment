@@ -13,13 +13,27 @@ import com.google.gson.JsonIOException;
 import com.google.gson.reflect.TypeToken;
 import com.yash.moviebookingsystem.model.Screen;
 
+/**
+ * This is the utility class which will provide the utility to read and write data 
+ * from json. 
+ * @author lenovo
+ *
+ */
 public class JSONUtil {
+	/**
+	 * This is the list of screens
+	 */
 	List<Screen> screenList = null;
 
 	public JSONUtil() {
 		screenList = new ArrayList<Screen>();
 	}
 
+	/**
+	 * This method will write the screen list to the json file.
+	 * @param screen
+	 * @return size of the screen's list
+	 */
 	public int writeScreenToList(Screen screen) {
 		screenList.add(screen);
 		Gson gson = new GsonBuilder().create();
@@ -35,6 +49,10 @@ public class JSONUtil {
 		return screenList.size();
 	}
 
+	/**
+	 * This method will read the data from json and store it into the screenlist object
+	 * @return list of screens
+	 */
 	public List<Screen> readListOfScreen() {
 
 		Gson gson = new GsonBuilder().create();
@@ -54,6 +72,11 @@ public class JSONUtil {
 
 	}
 
+	/**
+	 * This method will update the list of screen 
+	 * @param screenList - updated list of screen
+	 * @return true/false as list updated
+	 */
 	public boolean updateListOfScreens(List<Screen> screenList) {
 		Gson gson = new GsonBuilder().create();
 		try {
@@ -68,6 +91,11 @@ public class JSONUtil {
 		return true;
 	}
 
+	/**
+	 * This method will return the screen object by using the screen name.
+	 * @param screenName
+	 * @return
+	 */
 	public Screen getScreenObject(String screenName) {
 		screenList = readListOfScreen();
 		Screen requiredScreen = null;
