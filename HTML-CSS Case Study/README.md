@@ -2,10 +2,11 @@
 
 In this Case study a wireFrame is given. Teams are made for each wireFrame.
 My team :-
-1. Chetan Magre
-2. Nitesh yadav
+1. Nitesh yadav
+2. Chetan Magre
 
 ### Given WireFrame
+![alt wireframe](https://github.com/niteshyadav1671995/FWT-Assignment/blob/master/HTML-CSS%20Case%20Study/facilities.png)
 ### Contribution
 1. Nitesh yadav
   * Header
