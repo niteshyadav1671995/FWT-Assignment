@@ -2,7 +2,7 @@
 
 In this Case study a wireFrame is given. Teams are made for each wireFrame.
 My team :-
-1. Nitesh yadav
+1. Nitesh Yadav
 2. Chetan Magre
 
 ### Given WireFrame
